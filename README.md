@@ -1,8 +1,6 @@
-# Katherine
+# Katherine Ocampo
 
 ## Sobre mí
-
-**Nombre:** Katherine Ocampo
 
 **Rol:** Designer
 
@@ -13,4 +11,4 @@ Soy estudiante de Ing multimedia. Me interesa aprender a diseñar videojuegos y 
 
 ### Mi plato favorito
 
-![Mi plato favorito](Katherine/Lasagna%20Plato%20favorito.jpg)
+![Mi plato favorito](Lasagna%20Plato%20favorito.jpg)
