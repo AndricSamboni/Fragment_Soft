@@ -1,5 +1,6 @@
 # Katherine Ocampo
 <img src="foto.jpeg" width="200">
+
 ## Sobre mí
 
 **Rol:** Designer
