@@ -1,5 +1,5 @@
 # Katherine Ocampo
-
+![Mi foto](foto.jpeg)
 ## Sobre mí
 
 **Rol:** Designer
