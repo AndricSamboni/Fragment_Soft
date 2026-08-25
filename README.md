@@ -1,5 +1,5 @@
 # Katherine Ocampo
-![Mi foto](foto.jpeg)
+<img src="foto.jpeg" width="200">
 ## Sobre mí
 
 **Rol:** Designer
@@ -11,4 +11,4 @@ Soy estudiante de Ing multimedia. Me interesa aprender a diseñar videojuegos y 
 
 ### Mi plato favorito
 
-![Mi plato favorito](Lasagna%20Plato%20favorito.jpg)
+<img src="Lasagna%20Plato%20favorito.jpg" width="200">
