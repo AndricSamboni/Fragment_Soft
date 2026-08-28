@@ -1,5 +1,5 @@
 ## Andric Alexandre Samboni Urrutia
-![foto personal](/Andric/IMG-20251026-WA0014.jpgIMG-20251026-WA0014.jpg)
+![foto personal](/Andric/IMG-20251026-WA0014.jpg)
 ### Perfil
 **Rol:** Desarrollador
 **Ubicación:** Mocoa Putumayo
