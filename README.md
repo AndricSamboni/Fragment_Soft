@@ -22,6 +22,7 @@
 **Ubicación:** Colombia
 
 ### Perfil
+<<<<<<< HEAD
 
 Estudiante de Ingeniería Multimedia interesado en el desarrollo de videojuegos y la creación de experiencias digitales. Dentro del equipo desempeño el rol de Artista 3D, participando en la creación y desarrollo de elementos tridimensionales que contribuyan a la ambientación, estética y experiencia visual del videojuego.
 
@@ -43,3 +44,11 @@ Soy estudiante de Ing multimedia. Me interesa aprender a diseñar videojuegos y 
 ### Mi plato favorito
 
 <img src="Lasagna%20Plato%20favorito.jpg" width="200">
+=======
+**Rol:** Desarrollador
+**Ubicación:** Mocoa Putumayo
+### Sobre mí
+ Soy estudiante de ingeniería multimedia, me gustaría enfocarme en el área de la educación. Me gusta experimentar, aprender y compartir mi conocimiento con los demás.
+## Comida favorita
+![comida favorita](/Andric/a-crunchy_roll_sushi-feature-2.jpeg)
+>>>>>>> c91b8f6c2b959716799df1116cb61f6362b11a92
