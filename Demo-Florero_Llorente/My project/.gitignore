@@ -1,0 +1,10 @@
+/[L]ibrary/
+/Library/
+/[T]emp/
+/[O]bj/
+/[B]uild/
+/[B]uilds/
+/[L]ogs/
+/[U]ser[S]ettings/
+*.csproj
+*.sln

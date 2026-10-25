@@ -1,0 +1,1317 @@
+fileFormatVersion: 2
+guid: f30c2db52c27dac4793466d4044e8470
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6747368821882155597
+    second: iglesia_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: iglesia_12
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 401
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b5774a13ecbc54aac73c1dbf2aa381
+      internalID: -665591042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_36
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 194
+        width: 242
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf5fa45427cb1e4e9f65c30f294895e
+      internalID: -927159767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_76
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 353
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9978adf1045f741b8f5b9624f5c2a1
+      internalID: 1531574221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_92
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 321
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902667ace20d7934299a349cf0566bef
+      internalID: -93464026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_97
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 289
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc10173551fd4241955593086e8afa4
+      internalID: 1842768961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_99
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 289
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcfd8e3df3d6fd14da0da0314901cce2
+      internalID: -1423133895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_108
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 289
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 470925cab8ef3b049b6961352c38b370
+      internalID: 1791452688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_112
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 258
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7449b5c1b546f18498728eadb6bdf967
+      internalID: 826539742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_113
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 258
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef7c53e58d28a8409979f507fe7715d
+      internalID: 218523453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_124
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 258
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb41611f029a26649a20ccd3a06b1958
+      internalID: 1173802139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_128
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 226
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb05949a3a8ada74eb34ebc7ee265f4b
+      internalID: -192002345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_129
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 226
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de40cd787c7eff541b164786ed1905e4
+      internalID: 1510508229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_130
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 226
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed73d1cf5ee22544a777283add70fef
+      internalID: -82733117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_160
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 148
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8728f30bdff8d6a4391ddef1426a6fa8
+      internalID: 713485614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_161
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 148
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e654ab73a2d32b94b917bb708d921db9
+      internalID: 1728920179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_167
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 150
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c645c449783cf2e4eb4288c778a80c36
+      internalID: -1112909942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_188
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 100
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5025c24a32ab47e45a7408e43c1f7554
+      internalID: 1852836368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_189
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 101
+        width: 27
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7be5a5ca97fe984fb110f376f603697
+      internalID: -485102416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_190
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 132
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa95e6e99aedc0145a007742e08e0a53
+      internalID: 1181281964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_191
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 132
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066e9d2ce8940434d9ae08c0eddf0ff3
+      internalID: 157758929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_192
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 103
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc26e5f3298b5bb4fa2278cf980fff69
+      internalID: -2036348148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_193
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 103
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c65187d2b7b991c419159b631816a010
+      internalID: -533884093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_208
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 69
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce3ab4b78cce4149b7ca7a4d1807245
+      internalID: -2021577433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_209
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 69
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844326be1b30a5e479d6eb49cfb27c9e
+      internalID: 863565270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_212
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 40
+        width: 56
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878782a7ccf09f74fadd7ea76ed305b4
+      internalID: 1335225353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_219
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 77
+        width: 28
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a0fb0bf8446ac944a943b9786ac056c
+      internalID: -1807842948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_220
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 72
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bffd057b4625e443a1e718639582fac
+      internalID: 731864837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_221
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 72
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e892d365d6ab7b643a14c7ad8cc5c85b
+      internalID: -755285948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_222
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 73
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236c1060036499e4eb2c94d79a121791
+      internalID: -554173707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_224
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 39
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3597629f623adf34c8fec790d599e5b2
+      internalID: -77671488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_225
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 39
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a950786a6c38f43aaedca5dd4a8e53
+      internalID: -1855511059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_226
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 39
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c02d08c3b5732624b8e49f1de64a78e1
+      internalID: 544957886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_227
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 39
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24674a7883f6ed54892ed4dc59a83bbd
+      internalID: 1123975535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_234
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 43
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5867ff2922e8d84987298a73496dbfd
+      internalID: 101479101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_239
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 41
+        width: 10
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8e0ee37d8aa7d4491f4b9ce7841f51
+      internalID: -312220479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_240
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 7
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15db43d3172315941a20ec14be9ecc1f
+      internalID: -148955438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_241
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 7
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878e65d4dba8475439440f1f8a91bb26
+      internalID: -473239966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_242
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 7
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5916134b7702e0547ba74d3ff141d818
+      internalID: 908497242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_243
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 7
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e539bb92728e394c8816f6b35625b5a
+      internalID: -889235735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_247
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 11
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c4d577adf37034985bfccc4aa456c4
+      internalID: 565609440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_250
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 11
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90986a6193c7a674aa102ea439ebceef
+      internalID: 1637382893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iglesia_254
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 9
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91cf7baaa64369049b0f0539319f40e9
+      internalID: -385408511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 75d0e06064dd50c4e99b93ff04559cf7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      iglesia_0: 6747368821882155597
+      iglesia_1: 1191333615
+      iglesia_10: -78549129
+      iglesia_100: -854168834
+      iglesia_101: -882968839
+      iglesia_102: 2021783690
+      iglesia_103: -81533913
+      iglesia_104: -1663412845
+      iglesia_105: 1494425742
+      iglesia_106: 1543484476
+      iglesia_107: -513512042
+      iglesia_108: 1791452688
+      iglesia_109: 124850222
+      iglesia_11: 525070019
+      iglesia_110: -2028890019
+      iglesia_111: -412079131
+      iglesia_112: 826539742
+      iglesia_113: 218523453
+      iglesia_114: -2051178725
+      iglesia_115: 1343790270
+      iglesia_116: -1286741213
+      iglesia_117: -1385779061
+      iglesia_118: 1495713164
+      iglesia_119: -1868900012
+      iglesia_12: -665591042
+      iglesia_120: -1303851186
+      iglesia_121: -1025499602
+      iglesia_122: -1341777619
+      iglesia_123: -2141093229
+      iglesia_124: 1173802139
+      iglesia_125: 163370468
+      iglesia_126: -52508082
+      iglesia_127: 420350211
+      iglesia_128: -192002345
+      iglesia_129: 1510508229
+      iglesia_13: -805382542
+      iglesia_130: -82733117
+      iglesia_131: 1751998448
+      iglesia_132: 1517060782
+      iglesia_133: 1645725678
+      iglesia_134: -333693717
+      iglesia_135: 164248611
+      iglesia_136: -1717128335
+      iglesia_137: -430671544
+      iglesia_138: 2018487029
+      iglesia_139: -548046834
+      iglesia_14: 2145065007
+      iglesia_140: 1107940047
+      iglesia_141: -1940788752
+      iglesia_142: -1624719858
+      iglesia_143: 800962030
+      iglesia_144: -1240087919
+      iglesia_145: 1914481043
+      iglesia_146: 307406398
+      iglesia_147: 574302098
+      iglesia_148: 1339401421
+      iglesia_149: 705012811
+      iglesia_15: 17759864
+      iglesia_150: -642022241
+      iglesia_151: 737528039
+      iglesia_152: 734848052
+      iglesia_153: 1205343906
+      iglesia_154: -1491630030
+      iglesia_155: -1116454590
+      iglesia_156: -749381013
+      iglesia_157: 1362396468
+      iglesia_158: 1569633976
+      iglesia_159: 1671460402
+      iglesia_16: 262755866
+      iglesia_160: 713485614
+      iglesia_161: 1728920179
+      iglesia_162: 584519488
+      iglesia_163: -1039014734
+      iglesia_164: 2008579267
+      iglesia_165: 1065640905
+      iglesia_166: 1439798127
+      iglesia_167: -1112909942
+      iglesia_168: -520905908
+      iglesia_169: -1217452102
+      iglesia_17: -869486351
+      iglesia_170: 341685296
+      iglesia_171: 1459212325
+      iglesia_172: -623582571
+      iglesia_173: -953763646
+      iglesia_174: -1419508397
+      iglesia_175: -1868059294
+      iglesia_176: -736065178
+      iglesia_177: 1382030741
+      iglesia_178: -971083254
+      iglesia_179: 2011987551
+      iglesia_18: 1696938607
+      iglesia_180: 731230768
+      iglesia_181: 1064345652
+      iglesia_182: 830038039
+      iglesia_183: 233291460
+      iglesia_184: 432646311
+      iglesia_185: -1144152467
+      iglesia_186: 566019478
+      iglesia_187: -539237729
+      iglesia_188: 1852836368
+      iglesia_189: -485102416
+      iglesia_19: -532150570
+      iglesia_190: 1181281964
+      iglesia_191: 157758929
+      iglesia_192: -2036348148
+      iglesia_193: -533884093
+      iglesia_194: 1871722654
+      iglesia_195: 1070711060
+      iglesia_196: 1291750878
+      iglesia_197: 710685133
+      iglesia_198: 767825471
+      iglesia_199: -731398428
+      iglesia_2: -1227401470
+      iglesia_20: 2055216400
+      iglesia_200: 71721399
+      iglesia_201: 628022359
+      iglesia_202: 1958980344
+      iglesia_203: 901999384
+      iglesia_204: -1100615523
+      iglesia_205: -1384375198
+      iglesia_206: -454429756
+      iglesia_207: 63715813
+      iglesia_208: -2021577433
+      iglesia_209: 863565270
+      iglesia_21: -320838142
+      iglesia_210: -1679330000
+      iglesia_211: 671953205
+      iglesia_212: 1335225353
+      iglesia_213: 1499070876
+      iglesia_214: 1333223998
+      iglesia_215: 1965333795
+      iglesia_216: -2101612859
+      iglesia_217: -301860953
+      iglesia_218: 1716373409
+      iglesia_219: -1807842948
+      iglesia_22: -1277593747
+      iglesia_220: 731864837
+      iglesia_221: -755285948
+      iglesia_222: -554173707
+      iglesia_223: 725013016
+      iglesia_224: -77671488
+      iglesia_225: -1855511059
+      iglesia_226: 544957886
+      iglesia_227: 1123975535
+      iglesia_228: 130909480
+      iglesia_229: 1167534370
+      iglesia_23: -1516041521
+      iglesia_230: 2081704540
+      iglesia_231: 1987204510
+      iglesia_232: -727134058
+      iglesia_233: 1334546142
+      iglesia_234: 101479101
+      iglesia_235: -662975817
+      iglesia_236: 1362571978
+      iglesia_237: 1039353455
+      iglesia_238: -2121515537
+      iglesia_239: -312220479
+      iglesia_24: 2035371797
+      iglesia_240: -148955438
+      iglesia_241: -473239966
+      iglesia_242: 908497242
+      iglesia_243: -889235735
+      iglesia_244: -1644520665
+      iglesia_245: -358447977
+      iglesia_246: 1772101877
+      iglesia_247: 565609440
+      iglesia_248: -536948614
+      iglesia_249: 2012619355
+      iglesia_25: 1461408532
+      iglesia_250: 1637382893
+      iglesia_251: 671631218
+      iglesia_252: -1382431997
+      iglesia_253: 1102355805
+      iglesia_254: -385408511
+      iglesia_255: 619236896
+      iglesia_26: -1571390889
+      iglesia_27: 1481034669
+      iglesia_28: -1790167680
+      iglesia_29: 1810235922
+      iglesia_3: 563343800
+      iglesia_30: -1384651471
+      iglesia_31: 1755980045
+      iglesia_32: 1411942683
+      iglesia_33: -1681418252
+      iglesia_34: -1570495287
+      iglesia_35: 1774572029
+      iglesia_36: -927159767
+      iglesia_37: 770560574
+      iglesia_38: 2023085712
+      iglesia_39: -621184601
+      iglesia_4: 47839964
+      iglesia_40: -121318224
+      iglesia_41: 1756139406
+      iglesia_42: 1554881596
+      iglesia_43: -1814642776
+      iglesia_44: -693543038
+      iglesia_45: -1836806967
+      iglesia_46: 204741344
+      iglesia_47: -1834077894
+      iglesia_48: -1469017368
+      iglesia_49: 1891229812
+      iglesia_5: -1580885152
+      iglesia_50: -673562198
+      iglesia_51: 1692137359
+      iglesia_52: 1457643433
+      iglesia_53: 818541421
+      iglesia_54: -1894682396
+      iglesia_55: -686506214
+      iglesia_56: 999253368
+      iglesia_57: -610698520
+      iglesia_58: 545226490
+      iglesia_59: 1463933404
+      iglesia_6: -600638551
+      iglesia_60: -1803129378
+      iglesia_61: 1849956050
+      iglesia_62: -1904463450
+      iglesia_63: 1962898437
+      iglesia_64: -2145782371
+      iglesia_65: -978773795
+      iglesia_66: 1540170442
+      iglesia_67: -1369478796
+      iglesia_68: 1477321599
+      iglesia_69: 866108114
+      iglesia_7: 553436789
+      iglesia_70: 199582293
+      iglesia_71: 347939357
+      iglesia_72: 1404103784
+      iglesia_73: -1040567851
+      iglesia_74: -1815486368
+      iglesia_75: -85596760
+      iglesia_76: 1531574221
+      iglesia_77: 646034002
+      iglesia_78: -521730080
+      iglesia_79: -1248159989
+      iglesia_8: -1815799542
+      iglesia_80: 1451905288
+      iglesia_81: -596818214
+      iglesia_82: 2086460629
+      iglesia_83: 1094327790
+      iglesia_84: -176433080
+      iglesia_85: -1624737619
+      iglesia_86: 327155382
+      iglesia_87: 412827704
+      iglesia_88: -678385437
+      iglesia_89: -531236371
+      iglesia_9: 672344456
+      iglesia_90: 584378705
+      iglesia_91: 561802928
+      iglesia_92: -93464026
+      iglesia_93: 478129010
+      iglesia_94: -889613164
+      iglesia_95: 1155733209
+      iglesia_96: 98822805
+      iglesia_97: 1842768961
+      iglesia_98: 1138910652
+      iglesia_99: -1423133895
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
