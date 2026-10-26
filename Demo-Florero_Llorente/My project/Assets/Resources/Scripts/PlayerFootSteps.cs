@@ -6,9 +6,9 @@ public class PlayerFootsteps : MonoBehaviour
 {
     [Header("Footstep Settings")]
     [Tooltip("Audios de pasos por defecto.")]
-    [SerializeField] private List<AudioClip> stepClips = new List<AudioClip>();
+    [SerializeField] private List<AudioClip> stepClips = new List<AudioClip>(); // List of audio clips for default footsteps
     [Tooltip("Tiempo de espera entre cada paso.")]
-    [SerializeField] private float stepInterval = 0.4f;
+    [SerializeField] private float stepInterval = 0.4f; // Time delay between each footstep sound
 
     private AudioSource audioSource;
     private float stepTimer;
@@ -17,19 +17,20 @@ public class PlayerFootsteps : MonoBehaviour
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
-        audioSource.spatialBlend = 0f; 
+        audioSource.spatialBlend = 0f; // Set sound to 2D 
         rb2D = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
     {
-        // Detecta si el personaje se está moviendo usando la velocidad del Rigidbody
+        // Detects if the character is moving using the Rigidbody velocity threshold
         bool isMoving = rb2D != null && rb2D.linearVelocity.magnitude > 0.1f;
 
         if (isMoving)
         {
             stepTimer += Time.deltaTime;
 
+            // When timer reaches interval, play a step sound and reset timer
             if (stepTimer >= stepInterval)
             {
                 PlayFootstepSound();
@@ -39,10 +40,11 @@ public class PlayerFootsteps : MonoBehaviour
         else
         {
             // Reinicia el temporizador para que el primer paso suene inmediatamente al arrancar
-            stepTimer = stepInterval;
+            stepTimer = stepInterval; // Reset timer so the first footstep plays immediately when movement starts
         }
     }
 
+    // Plays a random footstep audio clip with slight pitch variation for realism
     private void PlayFootstepSound()
     {
         if (stepClips != null && stepClips.Count > 0)

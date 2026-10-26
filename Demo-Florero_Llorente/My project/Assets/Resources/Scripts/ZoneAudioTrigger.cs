@@ -29,6 +29,7 @@ public class ZoneAudioTrigger : MonoBehaviour
 
     private void Update()
     {
+        // If player is inside the zone, adjust volume dynamically based on distance
         if (isPlayerInside && playerTransform != null)
         {
             // Calculate distance from the player to this object's position
@@ -38,11 +39,12 @@ public class ZoneAudioTrigger : MonoBehaviour
             // When distance is 0, volume is maxVolume. When distance is maxDistance, volume is 0.
             float targetVolume = Mathf.Lerp(maxVolume, 0f, distance / maxDistance);
             
-            // Smoothly transition the volume
+            // Smoothly transition the volume towards the target value
             audioSource.volume = Mathf.MoveTowards(audioSource.volume, targetVolume, Time.deltaTime * 2f);
         }
     }
 
+    // Triggered when any object enters the zone collider
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Check if the entering object is the player (make sure your player has the "Player" tag)
@@ -58,6 +60,7 @@ public class ZoneAudioTrigger : MonoBehaviour
         }
     }
 
+    // Triggered when any object exits the zone collider
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -67,6 +70,7 @@ public class ZoneAudioTrigger : MonoBehaviour
         }
     }
 
+    // Coroutine to smoothly fade out audio when leaving the zone area completely
     private System.Collections.IEnumerator FadeOutAndStop()
     {
         // Smoothly fade out when leaving the area completely
