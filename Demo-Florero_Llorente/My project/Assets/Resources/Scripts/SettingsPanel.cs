@@ -14,7 +14,7 @@ public class SettingsPanel : MonoBehaviour
     private const string TextSizeKey = "TextSizeLevel"; // PlayerPrefs key for the text size
     private const string CaptionsKey = "CaptionsEnabled"; // PlayerPrefs key for the captions setting
 
-    private readonly float[] sizeMultipliers = { 1f, 1.25f, 1.5f }; // Small, Medium and Large
+    private readonly float[] sizeMultipliers = { 1f, 1.25f, 2f }; // Small, Medium and Large
     private readonly List<float> baseFontSizes = new List<float>(); // Original font size of each text
     private bool captionsEnabled = true; // Tracks if captions are currently allowed
     private Coroutine captionRoutine; // Reference to the running caption timer
