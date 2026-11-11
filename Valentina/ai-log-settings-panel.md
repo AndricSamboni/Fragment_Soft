@@ -3,8 +3,7 @@
 **Author:** Valentina Barrios Macias
 **Date:** 2026-11-07
 **Branch:** feature/valentina-hud
-**Tool:** Claude (Anthropic), chat on claude.ai. Model: Claude Sonnet 5.5 (check in the app's model selector)
-
+**Tool:** Claude (Anthropic), chat on claude.ai. Model: Claude Sonnet 5.5
 ## Context
 
 In this conversation, Claude wrote the prompt below based on my project's needs (an accessibility settings script for the pause menu), and then used that same prompt to generate the script. I pasted my team's existing `PauseMenuManager.cs` so the result would follow the same style. I did not write this prompt or this code from scratch; my part was defining the need, reviewing the result, saving it in the repository and, afterwards, testing and adapting it in Unity.
@@ -66,8 +65,24 @@ public class PauseMenuManager : MonoBehaviour
 
 ## Manual modifications
 
-(Pending. To be filled in after testing the script in Unity: what was changed and why. If nothing needed to change, write "No manual changes were needed".)
+- `SettingsPanel.cs`: changed the last value of `sizeMultipliers` from `1.5f` to `2f`, so the largest text size reaches 200% (WCAG 1.4.4 asks for text that can be enlarged up to 200%). The prompt asked for 1.5, so this was my decision after reviewing the generated code.
+- Unity setup (no code): built the settings UI (three size buttons, a captions toggle and a caption text), created a `SettingsManager` object with the script, filled its fields, and connected the button and toggle events.
+- Added `FactTitle`, `CaptionText` and the Close button label to the list of texts to scale after testing showed they did not resize.
+- Resized the mission panel, moved the inventory panel and narrowed the settings panel so nothing overlaps at 200%.
 
 ## Functional validation
 
+- Text size: the buttons A, A+ and A++ (1x, 1.25x and 2x) were tested in Play mode. The mission, inventory, fact title and body, caption and Close button label resize, and nothing overlaps or gets cut at 200%.
+- Captions: with the toggle on, a sample caption appears for about 3 seconds; with the toggle off, no caption appears. Tested with `FactTester` (AI-generated, temporary), which calls `ShowCaption("[Sonido: campana de iglesia]", 3f)`.
+- Not tested yet: whether the chosen size and captions setting are remembered after closing and reopening the game (PlayerPrefs).
+
+## Error debugged with AI
+
+The size buttons had no OnClick event. Cause: SizeSmall, SizeMedium and SizeLarge were created as plain TextMeshPro text objects, not as buttons, so they had no Button component. Fix: added a Button component to each and connected `SetTextSize(0/1/2)`.
+
+Also, in the first 200% test the fact window title did not resize because it was missing from the list of texts to scale. Fix: added it to the list.
+
+## Additional AI-generated file
+
+`FactTester.cs` (shared with the HUD log): extended with `ShowSampleCaption` to test the captions. Temporary; it will be removed before final delivery.
 (Pending. To be filled in after testing in the scene: text size buttons, captions toggle, saved settings.)
