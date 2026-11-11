@@ -74,7 +74,7 @@ public class PauseMenuManager : MonoBehaviour
 
 - Text size: the buttons A, A+ and A++ (1x, 1.25x and 2x) were tested in Play mode. The mission, inventory, fact title and body, caption and Close button label resize, and nothing overlaps or gets cut at 200%.
 - Captions: with the toggle on, a sample caption appears for about 3 seconds; with the toggle off, no caption appears. Tested with `FactTester` (AI-generated, temporary), which calls `ShowCaption("[Sonido: campana de iglesia]", 3f)`.
-- Not tested yet: whether the chosen size and captions setting are remembered after closing and reopening the game (PlayerPrefs).
+- Saved settings: the chosen text size is remembered. Selecting a size, stopping Play mode and starting again keeps that size (tested with the smallest and the largest size)
 
 ## Error debugged with AI
 
