@@ -85,4 +85,3 @@ Also, in the first 200% test the fact window title did not resize because it was
 ## Additional AI-generated file
 
 `FactTester.cs` (shared with the HUD log): extended with `ShowSampleCaption` to test the captions. Temporary; it will be removed before final delivery.
-(Pending. To be filled in after testing in the scene: text size buttons, captions toggle, saved settings.)
