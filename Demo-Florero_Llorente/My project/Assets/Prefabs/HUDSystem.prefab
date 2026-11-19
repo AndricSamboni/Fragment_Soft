@@ -302,7 +302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SettingsPanel
   textsToScale:
   - {fileID: 4315093529081988696}
-  - {fileID: 0}
+  - {fileID: 2916813457574206340}
   - {fileID: 1087155226263353216}
   - {fileID: 4634473370678457839}
   - {fileID: 3429605177873057757}
@@ -715,6 +715,74 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &1940349114959891195
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4342669924737405687}
+  - component: {fileID: 5322378485134094447}
+  m_Layer: 0
+  m_Name: MissionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4342669924737405687
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940349114959891195}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3322214721348456994}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5322378485134094447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940349114959891195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 291700c95e8a22341871cead883b0aa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MissionManager
+  hud: {fileID: 3003524883246342703}
+  learningTitle: Aprendizaje
+  finishedText: Recorrido completado
+  missions:
+  - objective: "Misi\xF3n 1: habla con el ciudadano del mercado"
+    learning: "Exist\xEDa desigualdad pol\xEDtica y social entre los grupos de la sociedad colonial."
+    factTitle: 
+    factBody: 
+  - objective: "Misi\xF3n 2: investiga el florero con el comerciante"
+    learning: "Los criollos buscaban una oportunidad para generar una protesta contra las autoridades espa\xF1olas."
+    factTitle: "\xBFSab\xEDas que...?"
+    factBody: "Antonio Villavicencio fue una figura importante en el contexto del 20 de julio de 1810. Su recibimiento en Santa Fe fue el motivo que los criollos utilizaron para solicitar el famoso florero a Jos\xE9 Gonz\xE1lez Llorente."
+  - objective: "Misi\xF3n 3: ac\xE9rcate a la plaza"
+    learning: "El conflicto alrededor del florero desencaden\xF3 una protesta popular el 20 de julio de 1810."
+    factTitle: 
+    factBody: 
+  - objective: "Misi\xF3n 4: habla con los habitantes de la plaza"
+    learning: "La protesta impuls\xF3 la organizaci\xF3n de una Junta de Gobierno en Santa Fe."
+    factTitle: 
+    factBody: 
+  - objective: "Misi\xF3n 5: consulta qu\xE9 decisiones se tomaron"
+    learning: "El 20 de julio de 1810 marc\xF3 un paso fundamental en el proceso de Independencia, aunque esta no se consigui\xF3 definitivamente ese d\xEDa."
+    factTitle: "\xBFSab\xEDas que...?"
+    factBody: "\xA1La Independencia no se logr\xF3 en un solo d\xEDa! Despu\xE9s del 20 de julio de 1810, continuaron varios a\xF1os de luchas hasta la Batalla de Boyac\xE1, el 7 de agosto de 1819, que fue decisiva para la independencia de la Nueva Granada."
 --- !u!1 &1955991739938702110
 GameObject:
   m_ObjectHideFlags: 0
@@ -1897,6 +1965,7 @@ Transform:
   - {fileID: 4735448689238472232}
   - {fileID: 2804669962492891991}
   - {fileID: 1091797301315915434}
+  - {fileID: 4342669924737405687}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5752803837303045617
