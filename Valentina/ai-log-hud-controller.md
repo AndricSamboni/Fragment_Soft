@@ -32,7 +32,7 @@ Finally, explain in a few short steps how to wire it in the Unity Inspector.
 - Public methods for other scripts to call: `SetMission`, `AddItem`, `RemoveItem`, `ShowFact`, `CloseFact`.
 
 ## Manual modifications
-No code changes yet. Manual work in Unity: built the UI hierarchy (MissionPanel, InventoryPanel, FactPanel, CloseButton), set anchors/pivot and Canvas Scaler, and assigned the script's serialized fields on the HUDManager object.
+Typed the AI-generated IsFactOpen property into HUDController.cs myself (see ai-log-mission-manager.md). Manual work in Unity: built the UI hierarchy (MissionBar, InventoryBar, FactPanel, CloseButton), restyled it with the team’s icons (cream panel, brown outline), set anchors/pivot and Canvas Scaler, assigned the script’s serialized fields on the HUDManager object, and packed everything into the HUDSystem prefab.
 
 ## Functional validation
 - SetMission: tested with a temporary button; the mission text updates.
