@@ -14,6 +14,8 @@ public class PlayerFootsteps : MonoBehaviour
     private float stepTimer;
     private Rigidbody2D rb2D;
 
+    // Place this beside the player's Rigidbody2D and assign footstep clips. Actual body velocity
+    // determines when steps are audible.
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
@@ -45,6 +47,8 @@ public class PlayerFootsteps : MonoBehaviour
     }
 
     // Plays a random footstep audio clip with slight pitch variation for realism
+    // The source pitch varies with each step, so a dedicated footstep source keeps that
+    // variation separate from other sounds.
     private void PlayFootstepSound()
     {
         if (stepClips != null && stepClips.Count > 0)

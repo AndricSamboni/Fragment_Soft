@@ -2,6 +2,8 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
+// Attach to the camera, assign the player's Transform to objetive, and include the desired
+// camera depth in displacement.
 public class CameraController : MonoBehaviour
 {
     
@@ -13,6 +15,8 @@ public class CameraController : MonoBehaviour
     public Vector3 displacement;
 
     // LateUpdate runs after all Update functions, ideal for cameras to avoid stuttering/jitter
+    // CameraSpeed is the fraction of the remaining gap covered per frame. A value of one snaps
+    // to the offset position.
     private void LateUpdate()
     {
         // Calculate where the camera wants to be based on target position and offset

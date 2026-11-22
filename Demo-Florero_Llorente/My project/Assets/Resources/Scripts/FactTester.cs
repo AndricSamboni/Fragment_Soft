@@ -17,7 +17,7 @@ public class FactTester : MonoBehaviour
         }
         hud.ShowFact(
             "El Florero de Llorente",
-            "El 20 de julio de 1810 en Bogot·, una discusiÛn por un florero prestado desatÛ el inicio de la independencia.");
+            "El 20 de julio de 1810 en Bogot√°, una discusi√≥n por un florero prestado desat√≥ el inicio de la independencia.");
     }
 
     public void ShowSampleCaption()

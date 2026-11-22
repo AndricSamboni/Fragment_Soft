@@ -25,32 +25,32 @@ public class MissionManager : MonoBehaviour
     {
         new Mission
         {
-            objective = "Misión 1: habla con el ciudadano del mercado",
-            learning = "Existía desigualdad política y social entre los grupos de la sociedad colonial."
+            objective = "MisiÃ³n 1: habla con el ciudadano del mercado",
+            learning = "ExistÃ­a desigualdad polÃ­tica y social entre los grupos de la sociedad colonial."
         },
         new Mission
         {
-            objective = "Misión 2: investiga el florero con el comerciante",
-            learning = "Los criollos buscaban una oportunidad para generar una protesta contra las autoridades españolas.",
-            factTitle = "¿Sabías que...?",
-            factBody = "Antonio Villavicencio fue una figura importante en el contexto del 20 de julio de 1810. Su recibimiento en Santa Fe fue el motivo que los criollos utilizaron para solicitar el famoso florero a José González Llorente."
+            objective = "MisiÃ³n 2: investiga el florero con el comerciante",
+            learning = "Los criollos buscaban una oportunidad para generar una protesta contra las autoridades espaÃ±olas.",
+            factTitle = "Â¿SabÃ­as que...?",
+            factBody = "Antonio Villavicencio fue una figura importante en el contexto del 20 de julio de 1810. Su recibimiento en Santa Fe fue el motivo que los criollos utilizaron para solicitar el famoso florero a JosÃ© GonzÃ¡lez Llorente."
         },
         new Mission
         {
-            objective = "Misión 3: acércate a la plaza",
-            learning = "El conflicto alrededor del florero desencadenó una protesta popular el 20 de julio de 1810."
+            objective = "MisiÃ³n 3: acÃ©rcate a la plaza",
+            learning = "El conflicto alrededor del florero desencadenÃ³ una protesta popular el 20 de julio de 1810."
         },
         new Mission
         {
-            objective = "Misión 4: habla con los habitantes de la plaza",
-            learning = "La protesta impulsó la organización de una Junta de Gobierno en Santa Fe."
+            objective = "MisiÃ³n 4: habla con los habitantes de la plaza",
+            learning = "La protesta impulsÃ³ la organizaciÃ³n de una Junta de Gobierno en Santa Fe."
         },
         new Mission
         {
-            objective = "Misión 5: consulta qué decisiones se tomaron",
-            learning = "El 20 de julio de 1810 marcó un paso fundamental en el proceso de Independencia, aunque esta no se consiguió definitivamente ese día.",
-            factTitle = "¿Sabías que...?",
-            factBody = "¡La Independencia no se logró en un solo día! Después del 20 de julio de 1810, continuaron varios años de luchas hasta la Batalla de Boyacá, el 7 de agosto de 1819, que fue decisiva para la independencia de la Nueva Granada."
+            objective = "MisiÃ³n 5: consulta quÃ© decisiones se tomaron",
+            learning = "El 20 de julio de 1810 marcÃ³ un paso fundamental en el proceso de Independencia, aunque esta no se consiguiÃ³ definitivamente ese dÃ­a.",
+            factTitle = "Â¿SabÃ­as que...?",
+            factBody = "Â¡La Independencia no se logrÃ³ en un solo dÃ­a! DespuÃ©s del 20 de julio de 1810, continuaron varios aÃ±os de luchas hasta la Batalla de BoyacÃ¡, el 7 de agosto de 1819, que fue decisiva para la independencia de la Nueva Granada."
         }
     };
 

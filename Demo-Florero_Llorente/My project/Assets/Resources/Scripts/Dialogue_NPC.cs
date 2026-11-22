@@ -1,8 +1,10 @@
 using UnityEngine;
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine.Events;
 
+// Mantiene los nombres de campos originales para no perder referencias del Inspector.
 public class Dialogue_NPC : MonoBehaviour
 {
     // UI elements and text references for the dialogue system
@@ -42,9 +44,11 @@ public class Dialogue_NPC : MonoBehaviour
             }
 
         }
+        return dialogueLines;
     }
 
-    // Initializes and opens the dialogue interface, pausing the game time
+    // Save the current time scale before pausing. Dialogue text uses real time so it can still
+    // appear character by character.
     private void StartDialogue()
     {
         didDialogueStart = true;
@@ -57,7 +61,6 @@ public class Dialogue_NPC : MonoBehaviour
 
     }
 
-    // Advances to the next line or closes dialogue if it's the end
     private void NextDialogueLine()
     {
         lineIndex++;
@@ -76,7 +79,6 @@ public class Dialogue_NPC : MonoBehaviour
         }
     }
 
-    // Coroutine that creates a typewriter effect, printing text character by character
     private IEnumerator ShowLine()
     {
         dialogueText.text = string.Empty;
@@ -86,9 +88,9 @@ public class Dialogue_NPC : MonoBehaviour
             dialogueText.text += ch;
             yield return new WaitForSecondsRealtime(typingTime); // Realtime ignores timeScale=0 pause
         }
+        typingRoutine = null;
     }
 
-    // Detects when the player enters the NPC's interaction zone
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -97,6 +99,10 @@ public class Dialogue_NPC : MonoBehaviour
             DialogueMark.SetActive(true);
             Debug.Log("Se puede iniciar dialogo");
         }
+        didDialogueStart = false;
+        if (typingRoutine != null) StopCoroutine(typingRoutine);
+        typingRoutine = null;
+        if (DialogueMark != null) DialogueMark.SetActive(false);
     }
     // Detects when the player leaves the NPC's interaction zone
     private void OnTriggerExit2D(Collider2D collision)
