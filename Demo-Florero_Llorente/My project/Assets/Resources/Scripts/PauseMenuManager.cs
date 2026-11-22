@@ -1,5 +1,7 @@
 using UnityEngine;
 
+// Assign both UI objects, then connect the pause, resume and quit buttons to the matching public
+// methods.
 public class PauseMenuManager : MonoBehaviour
 {
    public GameObject PauseMenu; // Reference to the pause menu UI panel
@@ -14,6 +16,8 @@ public class PauseMenuManager : MonoBehaviour
     }
 
     // Resumes the game time and restores UI visibility
+    // Resuming sets timeScale to one, including when the game used a different speed before the
+    // pause.
     public void ResumeGame()
     {
          Time.timeScale=1; // Restores normal game time speed

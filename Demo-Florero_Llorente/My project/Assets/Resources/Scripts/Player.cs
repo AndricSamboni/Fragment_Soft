@@ -1,5 +1,7 @@
 using UnityEngine;
 
+// Place the Rigidbody2D and Animator on this GameObject. The Animator expects Horizontal,
+// Vertical and speed float parameters.
 public class Player : MonoBehaviour
 {
    
@@ -35,6 +37,8 @@ public class Player : MonoBehaviour
     }
 
     // FixedUpdate is used for smooth physics calculations
+    // Each physics step uses the most recent input sample, even when rendering and physics run
+    // at different rates.
     private void FixedUpdate()
     {
         // Apply velocity to the Rigidbody2D to move the character

@@ -15,6 +15,8 @@ public class ZoneAudioTrigger : MonoBehaviour
     private Transform playerTransform;
     private bool isPlayerInside = false;
 
+    // Assign the zone's loop clip to its AudioSource and use a 2D collider to define where the
+    // player can hear it.
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
@@ -27,6 +29,8 @@ public class ZoneAudioTrigger : MonoBehaviour
         col.isTrigger = true;
     }
 
+    // The collider controls entry and exit. Volume inside the zone depends on distance from the
+    // object's pivot, so place it at the intended sound center.
     private void Update()
     {
         // If player is inside the zone, adjust volume dynamically based on distance
