@@ -1,104 +1,110 @@
-using UnityEngine;
 using System.Collections;
-using TMPro;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class Dialogue_NPC : MonoBehaviour
+[RequireComponent(typeof(AudioSource))]
+public class MusicalScoring : MonoBehaviour
 {
-   // UI elements and text references for the dialogue system
-   [SerializeField] private GameObject DialogueMark; // Icon shown when player can talk to NPC
-   [SerializeField] private GameObject Dialoguepanel; // Panel box displaying the dialogue
-   [SerializeField] private TMP_Text dialogueText; // Text component where letters appear
+    [Header("Playlist")]
+    [Tooltip("Drag your ambient music clips here.")]
+    [SerializeField] private List<AudioClip> ambientClips = new List<AudioClip>(); // List to hold background music tracks
 
-   [SerializeField, TextArea(4,6)]private string [] dialogueLines; // Array of dialogue sentences
-   private float typingTime=0.05f; // Speed of the typing letter-by-letter effect
-   private bool isPlayerInRange; // Checks if the player is close enough to interact
-   private bool didDialogueStart; // Tracks if a conversation is currently active
-   private int lineIndex; // Tracks which line of dialogue is currently showing
+    [Header("Fade Settings")]
+    [Tooltip("Duration in seconds for the fade-in and fade-out effect.")]
+    [SerializeField] private float fadeDuration = 2f; // How long it takes for tracks to fade in or out
+    [Tooltip("Maximum volume for the ambient tracks.")]
+    [Range(0f, 1f)]
+    [SerializeField] private float maxVolume = 0.8f; // Peak volume level when a song is playing
 
-    // Update is called once per frame to check for player input
-    void Update()
+    private AudioSource audioSource;
+    private List<AudioClip> shuffledClips = new List<AudioClip>();
+    private int currentIndex = 0;
+
+    private void Awake()
     {
-        // If player is close and presses the 'E' key
-        if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
+        // Automatically get the AudioSource component attached to this object
+        audioSource = GetComponent<AudioSource>();
+        audioSource.loop = false; // Disable loop because we manage the playlist order manually
+        audioSource.spatialBlend = 0f; // Ensure it plays globally in 2D stereo
+    }
+
+    private void Start()
+    {
+        // Safety check: if no tracks are assigned, log a warning and stop execution
+        if (ambientClips == null || ambientClips.Count == 0)
         {
-            // If dialogue hasn't started yet, begin it
-            if (!didDialogueStart)
+            Debug.LogWarning("SimpleAmbientMusic: No audio clips assigned in the inspector.");
+            return;
+        }
+
+        // Shuffle tracks randomly and start playing the ambient playlist loop
+        ShufflePlaylist();
+        StartCoroutine(PlayPlaylistRoutine());
+    }
+
+    private void ShufflePlaylist()
+    {
+        // Randomize the order of tracks to prevent the same sequence every time
+        shuffledClips = new List<AudioClip>(ambientClips);
+        for (int i = shuffledClips.Count - 1; i > 0; i--)
+        {
+            int randomIndex = Random.Range(0, i + 1);
+            AudioClip temp = shuffledClips[i];
+            shuffledClips[i] = shuffledClips[randomIndex];
+            shuffledClips[randomIndex] = temp;
+        }
+        currentIndex = 0; // Reset index to the beginning of the shuffled list
+    }
+
+    private IEnumerator PlayPlaylistRoutine()
+    {
+        // Infinite loop to keep background ambient music playing continuously
+        while (true)
+        {
+            // If all tracks have been played, reshuffle the playlist for variety
+            if (currentIndex >= shuffledClips.Count)
             {
-               StartDialogue(); 
+                ShufflePlaylist();
             }
-            // If the current line has finished typing, go to the next line
-            else if(dialogueText.text==dialogueLines[lineIndex])
+
+            // Get the next track and advance the index tracker
+            AudioClip currentClip = shuffledClips[currentIndex];
+            currentIndex++;
+
+            // Assign the clip, set volume to zero for smooth entry, and play
+            audioSource.clip = currentClip;
+            audioSource.volume = 0f;
+            audioSource.Play();
+
+            // Smooth Fade In effect from 0 up to maxVolume
+            yield return StartCoroutine(FadeAudio(0f, maxVolume, fadeDuration));
+
+            // Wait until the clip is almost finished playing (minus the fade out time)
+            float waitTime = currentClip.length - (fadeDuration * 2f);
+            if (waitTime > 0f)
             {
-                NextDialogueLine();
+                yield return new WaitForSeconds(waitTime);
             }
-            // If player presses 'E' while text is still typing, instantly skip to full line text
-            else
-            {
-                StopAllCoroutines();
-                dialogueText.text=dialogueLines[lineIndex];
-            }
-            
+
+            // Smooth Fade Out effect before switching to the next track
+            yield return StartCoroutine(FadeAudio(maxVolume, 0f, fadeDuration));
+
+            // Stop the audio source completely before loading the next track
+            audioSource.Stop();
         }
     }
 
-    // Initializes and opens the dialogue interface, pausing the game time
-    private void StartDialogue()
+    private IEnumerator FadeAudio(float startVolume, float targetVolume, float duration)
     {
-        didDialogueStart= true;
-        Dialoguepanel.SetActive(true);
-        DialogueMark.SetActive(false);
-        lineIndex=0;
-        Time.timeScale=0f; // Pauses gameplay while talking
-        StartCoroutine(ShowLine());
-        
-    }
-
-    // Advances to the next line or closes dialogue if it's the end
-    private void NextDialogueLine()
-    {
-      lineIndex++;
-      if(lineIndex<dialogueLines.Length)
+        float timer = 0f;
+        // Gradually transition the volume over time using linear interpolation (Lerp)
+        while (timer < duration)
         {
-            StartCoroutine(ShowLine());
-        }  
-        else
-        {
-            didDialogueStart=false;
-            Dialoguepanel.SetActive(false);
-            DialogueMark.SetActive(true);
-            Time.timeScale=1f; // Resumes gameplay when dialogue ends
+            timer += Time.deltaTime;
+            audioSource.volume = Mathf.Lerp(startVolume, targetVolume, timer / duration);
+            yield return null; // Wait for the next frame
         }
+        // Ensure volume settles exactly on the target value at the end of the fade
+        audioSource.volume = targetVolume;
     }
-
-    // Coroutine that creates a typewriter effect, printing text character by character
-    private IEnumerator ShowLine()
-    {
-        dialogueText.text=string.Empty;
-        foreach(char ch in dialogueLines[lineIndex])
-        {
-            dialogueText.text+=ch;
-            yield return new WaitForSecondsRealtime(typingTime); // Realtime ignores timeScale=0 pause
-        }
-    }
-
-    // Detects when the player enters the NPC's interaction zone
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.gameObject.CompareTag("Player"))
-        {
-            isPlayerInRange=true;
-            DialogueMark.SetActive(true);
-            Debug.Log("Se puede iniciar dialogo");
-        }
-    }
-         // Detects when the player leaves the NPC's interaction zone
-         private void OnTriggerExit2D(Collider2D collision)
-    {
-         if(collision.gameObject.CompareTag("Player")){
-        isPlayerInRange=false;
-            DialogueMark.SetActive(false);
-             Debug.Log("No se puede iniciar dialogo");
-    }
-    }
-    
 }
