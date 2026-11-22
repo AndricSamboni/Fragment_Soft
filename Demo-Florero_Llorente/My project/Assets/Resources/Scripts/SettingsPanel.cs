@@ -20,8 +20,6 @@ public class SettingsPanel : MonoBehaviour
     private Coroutine captionRoutine; // Reference to the running caption timer
 
     // Stores the original font sizes and hides the caption text
-    // Register the text elements to resize in the Inspector. Their starting sizes provide the
-    // baseline for every size level.
     private void Awake()
     {
         foreach (TMP_Text text in textsToScale)
@@ -84,8 +82,6 @@ public class SettingsPanel : MonoBehaviour
     }
 
     // Shows a caption for the given time, only if captions are enabled
-    // A new caption replaces the current one. Its duration uses real time so captions can expire
-    // during a pause.
     public void ShowCaption(string text, float seconds)
     {
         if (!captionsEnabled || captionText == null)

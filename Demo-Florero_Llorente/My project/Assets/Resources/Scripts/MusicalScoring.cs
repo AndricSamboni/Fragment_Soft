@@ -20,8 +20,6 @@ public class MusicalScoring : MonoBehaviour
     private List<AudioClip> shuffledClips = new List<AudioClip>();
     private int currentIndex = 0;
 
-    // Give the playlist its own AudioSource. This component changes its clip and volume
-    // throughout playback.
     private void Awake()
     {
         // Automatically get the AudioSource component attached to this object
@@ -44,8 +42,6 @@ public class MusicalScoring : MonoBehaviour
         StartCoroutine(PlayPlaylistRoutine());
     }
 
-    // Shuffle a working copy so the clip order shown in the Inspector stays intact across
-    // playlist cycles.
     private void ShufflePlaylist()
     {
         // Randomize the order of tracks to prevent the same sequence every time
@@ -98,7 +94,6 @@ public class MusicalScoring : MonoBehaviour
         }
     }
 
-    // Fades use scaled frame time, so their progress pauses while the game's time scale is zero.
     private IEnumerator FadeAudio(float startVolume, float targetVolume, float duration)
     {
         float timer = 0f;

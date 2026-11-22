@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Lenovo\\Documents\\GitHub\\Fragment_Soft\\Demo-Florero_Llorente\\My project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|d:\\lenovo\\documents\\github\\fragment_soft\\demo-florero_llorente\\my project\\assets\\resources\\scripts\\facttester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\scripts\\facttester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FactTester.cs",
+              "DocumentMoniker": "D:\\Lenovo\\Documents\\GitHub\\Fragment_Soft\\Demo-Florero_Llorente\\My project\\Assets\\Resources\\Scripts\\FactTester.cs",
+              "RelativeDocumentMoniker": "Assets\\Resources\\Scripts\\FactTester.cs",
+              "ToolTip": "D:\\Lenovo\\Documents\\GitHub\\Fragment_Soft\\Demo-Florero_Llorente\\My project\\Assets\\Resources\\Scripts\\FactTester.cs",
+              "RelativeToolTip": "Assets\\Resources\\Scripts\\FactTester.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T22:12:28.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
